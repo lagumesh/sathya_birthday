@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0">
+    <meta name="theme-color" content="#667eea">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Birthday Celebration">
+    <meta name="description" content="Beautiful birthday celebration app with personalized greetings and photo slideshow">
+    <title>Birthday Celebration App</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Splash Screen -->
+    <div class="splash-screen" id="splashScreen">
+        <img src="images/sathya1.jpeg" 
+             alt="Birthday Celebration" 
+             class="splash-image">
+    </div>
+
+    <!-- Greeting Container -->
+    <div class="login-container justify-content-center align-items-center" id="loginContainer">
+        <div id="greetingContainer" class="greeting-container">
+            <div class="greeting-text" id="greetingText"></div>
+            <!-- Floating Hearts -->
+            <div class="heart">💖</div>
+            <div class="heart">💕</div>
+            <div class="heart">💗</div>
+            <div class="heart">💝</div>
+            <div class="heart">💖</div>
+            <div class="heart">💕</div>
+            <div class="heart">💗</div>
+            <div class="heart">💝</div>
+            <div class="heart">💖</div>
+        </div>
+        
+        <!-- Login Page -->
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-5">
+                    <div class="login-card p-5">
+                        <div class="text-center mb-4">
+                            <h2 class="fw-bold text-white mb-2">Welcome!</h2>
+                            <p class="text-light">Please enter your details to continue</p>
+                        </div>
+                        
+                        <form id="loginForm">
+                            <div class="mb-4">
+                                <label for="name" class="form-label fw-semibold text-white">Full Name</label>
+                                <input type="text" 
+                                       class="form-control form-control-lg" 
+                                       id="name" 
+                                       name="name"
+                                       placeholder="Enter your full name"
+                                       required>
+                            </div>
+                            
+                            <div class="mb-4">
+                                <label for="dateOfBirth" class="form-label fw-semibold text-white">Date of Birth</label>
+                                <input type="date" 
+                                       class="form-control form-control-lg" 
+                                       id="dateOfBirth" 
+                                       name="dateOfBirth"
+                                       required>
+                            </div>
+                            
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-primary btn-lg">
+                                    Continue 🎉
+                                </button>
+                            </div>
+                        </form>
+                        
+                        <div class="text-center mt-4">
+                            <div class="birthday-icon lightning-candles">🎂</div>
+                            <small class="text-light">
+                                Ready to celebrate your special day? 🎈
+                            </small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Birthday Celebration Page -->
+    <div class="celebration-container" id="celebrationContainer">
+        <div class="celebration-background">
+            <!-- 3D Hearts Animation -->
+            <div class="hearts-3d"></div>
+        </div>
+        
+        <!-- Image Slider -->
+        <div class="image-slider">
+            <div class="slider-container">
+                <div class="slide active">
+                    <img src="images/sathya1.jpeg" alt="Birthday Memory 1">
+                </div>
+                <div class="slide">
+                    <img src="images/sathya2.jpeg" alt="Birthday Memory 2">
+                </div>
+                <div class="slide">
+                    <img src="images/sathya3.jpeg" alt="Birthday Memory 3">
+                </div>
+                <div class="slide">
+                    <img src="images/sathya4.jpeg" alt="Birthday Memory 4">
+                </div>
+                <div class="slide">
+                    <img src="images/sathya5.jpeg" alt="Birthday Memory 5">
+                </div>
+                <div class="slide">
+                    <img src="images/sathya6.jpeg" alt="Birthday Memory 6">
+                </div>
+                <div class="slide">
+                    <img src="images/sathya7.jpeg" alt="Birthday Memory 7">
+                </div>
+                <div class="slide">
+                    <img src="images/sathya8.jpeg" alt="Birthday Memory 8">
+                </div>
+                <div class="slide">
+                    <img src="images/sathya9.jpeg" alt="Birthday Memory 9">
+                </div>
+                <div class="slide">
+                    <img src="images/sathya10.jpeg" alt="Birthday Memory 10">
+                </div>
+                <div class="slide">
+                    <img src="images/sathya11.jpeg" alt="Birthday Memory 11">
+                </div>
+                <div class="slide">
+                    <img src="images/sathya12.jpeg" alt="Birthday Memory 12">
+                </div>
+                <div class="slide">
+                    <img src="images/sathya13.jpeg" alt="Birthday Memory 13">
+                </div>
+            </div>
+            
+            <!-- Slider Navigation -->
+            <div class="slider-nav">
+                <span class="nav-dot active" data-slide="0"></span>
+                <span class="nav-dot" data-slide="1"></span>
+                <span class="nav-dot" data-slide="2"></span>
+                <span class="nav-dot" data-slide="3"></span>
+                <span class="nav-dot" data-slide="4"></span>
+                <span class="nav-dot" data-slide="5"></span>
+                <span class="nav-dot" data-slide="6"></span>
+                <span class="nav-dot" data-slide="7"></span>
+                <span class="nav-dot" data-slide="8"></span>
+                <span class="nav-dot" data-slide="9"></span>
+                <span class="nav-dot" data-slide="10"></span>
+                <span class="nav-dot" data-slide="11"></span>
+                <span class="nav-dot" data-slide="12"></span>
+            </div>
+        </div>
+        
+        <!-- Birthday Message -->
+        <div class="birthday-message">
+            <h1 id="birthdayTitle">🎉 Happy Birthday! 🎉</h1>
+            <p id="birthdayWish">Wishing you a wonderful year ahead filled with joy and happiness!</p>
+        </div>
+        
+        <!-- Background Music -->
+        <audio id="birthdayMusic" loop>
+            <source src="song/Yaramma-Ivalu-Cheluve (1) (mp3cut.net).mp3" type="audio/wav">
+            <!-- Fallback to a different source if needed -->
+        </audio>
+        
+        <!-- Music Control -->
+        <div class="music-control">
+            <button id="musicToggle" class="music-btn">🔊</button>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
